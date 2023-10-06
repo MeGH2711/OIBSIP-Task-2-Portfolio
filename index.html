@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MeghPatel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+    <!-- Script -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <style>
+        .scroller {
+            opacity: 0.05;
+            white-space: nowrap;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .scroller .scroller-in {
+            display: inline-block;
+            white-space: nowrap;
+            animation-name: scrollin;
+            animation-duration: 30s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .scroller .scroller-out {
+            display: inline-block;
+            white-space: nowrap;
+            animation-name: scrollout;
+            animation-duration: 30s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .scroller h4 {
+            display: inline-block;
+            margin: 20px 15px;
+            font-size: 130px;
+            font-weight: 700;
+            -webkit-text-stroke: 1.5px var(--theme);
+        }
+
+        .hollow-text {
+            transition: all 0.3s ease;
+            /* Set the initial text color */
+            cursor: context-menu;
+        }
+
+        /* Style on hover to make the text hollow */
+        .hollow-text:hover {
+            color: transparent;
+            /* Make the text transparent */
+            -webkit-text-stroke: 2px #ADB5BD;
+            /* Add an outline/stroke to the text (webkit prefix for some browsers) */
+        }
+
+        @keyframes scrollin {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes scrollout {
+            from {
+                transform: translateX(-50%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .landing {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+        }
+
+        .landingbg {
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .landingcnt {
+            position: absolute;
+            width: 100%;
+            height: 500px;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .enlarge {
+            transition: transform 0.3s ease;
+        }
+
+        .enlarge:hover {
+            transform: scale(1.025);
+        }
+
+        /* Scrollbar Width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(37, 35, 35);
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(46, 42, 42);
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary bg-transparent">
+        <div class="container">
+            <a class="navbar-brand m-3 fs-3"
+                style="font-family: 'Dela Gothic One', cursive; user-select: none;">MeghPatel.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav"
+                style="font-family: 'Gabarito', cursive;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactme">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <div class="landing">
+            <div class="landingbg reveal">
+                <div class="scroller">
+                    <div class="scroller-in">
+                        <h4 class="hollow-text">Web Developer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">UI/UX Designer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">Front End Developer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">Anchor</h4>
+                        <h4>|</h4>
+                    </div>
+                    <div class="scroller-in">
+                        <h4 class="hollow-text">Web Developer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">UI/UX Designer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">Front End Developer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">Anchor</h4>
+                        <h4>|</h4>
+                    </div>
+                </div>
+                <div class="scroller">
+                    <div class="scroller-out">
+                        <h4 class="hollow-text">Web Developer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">UI/UX Designer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">Front End Developer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">Anchor</h4>
+                        <h4>|</h4>
+                    </div>
+                    <div class="scroller-out">
+                        <h4 class="hollow-text">Web Developer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">UI/UX Designer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">Front End Developer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">Anchor</h4>
+                        <h4>|</h4>
+                    </div>
+                </div>
+                <div class="scroller">
+                    <div class="scroller-in">
+                        <h4 class="hollow-text">Web Developer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">UI/UX Designer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">Front End Developer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">Anchor</h4>
+                        <h4>|</h4>
+                    </div>
+                    <div class="scroller-out">
+                        <h4 class="hollow-text">Web Developer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">UI/UX Designer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">Front End Developer</h4>
+                        <h4>|</h4>
+                        <h4 class="hollow-text">Anchor</h4>
+                        <h4>|</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="landingcnt">
+                <h1 class="revealdelay" style="font-family: 'Dela Gothic One', cursive; font-size: 100px;">Megh Patel.
+                </h1>
+            </div>
+        </div>
+        <div class="container">
+            <section id="aboutme" class="aboutme">
+                <h1 class="reveal" style="font-family: 'Dela Gothic One', cursive; font-size: 75px;">About Me</h1>
+                <hr>
+                <div class="row my-4 reveal">
+                    <div class="col-lg-4 my-3">
+                        <img class="img-fluid rounded-3" src="Images/about-page.jpg" draggable="false"
+                            oncontextmenu="return false;">
+                    </div>
+                    <div class="col-lg-8 my-3">
+                        <p>Hi! I am <span class="fw-bold">Megh Patel</span>, currently pursuing my bachelors degree in
+                            Computer
+                            Engineering at <a style="font-weight: bold;"
+                                onclick="window.open('https://gandhinagaruni.ac.in/','_blank')">Gandhinagar University -
+                                Gandhinagar
+                                Institute of Technology</a>. I am interested in the field of Computer Science and
+                            Engineering, and
+                            working
+                            towards developing the necessary skills and knowledge to pursue a career in this area.</p>
+                        <p>I am immersing myself in a wide array of subjects, ranging from programming languages to
+                            computer systems architecture, and I'm actively engaging in practical learning by
+                            participating in lab work, projects, and internships. Beyond my academic pursuits, I am an
+                            enthusiastic participant in various extracurricular activities, including clubs and
+                            organizations that align with my field of study.</p>
+                        <p>
+                            Moreover, I have a genuine curiosity for technology and an unyielding passion for making a
+                            meaningful impact on the world through my work. On top of all this, I have an additional
+                            facet to my personality—I absolutely love hosting a diverse range of events, which adds an
+                            extra layer of excitement to my journey.
+                        </p>
+                        <p>I am proficient in programming languages such as :
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                            </div>
+                            <div class="col-lg-4">
+                                <li>Python</li>
+                                <li>PHP</li>
+                                <li>Video Editing</li>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="skills reveal">
+                <h1 class="reveal my-4" style="font-family: 'Dela Gothic One', cursive; font-size: 75px;">
+                    Skills</h1>
+                <hr>
+                <div class="row my-4">
+                    <div class="col-lg-6">
+                        <div class="card mb-3 enlarge">
+                            <div class="row g-0">
+                                <div class="col-md-3 d-flex justify-content-center text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                        style="fill: #ADB5BD; width: 50%;">
+                                        <path
+                                            d="M0-360v-240h48v89h108v-89h48v240h-48v-103H48v103H0Zm316 0v-192h-70v-48h188v48h-70v192h-48Zm160 0v-206q0-15 9.5-24.5T510-600h200q15 0 24.5 9.5T744-566v206h-48v-192h-62v150h-48v-150h-62v192h-48Zm326 0v-240h48v192h110v48H802Z" />
+                                    </svg>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">HTML5</h5>
+                                        <div class="my-2">
+                                            <h7>90%</h7>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" class="ml-1 my-1">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 enlarge">
+                            <div class="row g-0">
+                                <div class="col-md-3 d-flex justify-content-center text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                        style="fill: #ADB5BD; width: 50%;">
+                                        <path
+                                            d="M414-360q-15 0-24.5-9.5T380-394v-46h48v32h104v-53H414q-14 0-24-10t-10-24v-71q0-15 9.5-24.5T414-600h132q15 0 24.5 9.5T580-566v46h-48v-32H428v53h118q14 0 24 10t10 24v71q0 15-9.5 24.5T546-360H414Zm260 0q-15 0-24.5-9.5T640-394v-46h48v32h104v-53H674q-14 0-24-10t-10-24v-71q0-15 9.5-24.5T674-600h132q15 0 24.5 9.5T840-566v46h-48v-32H688v53h118q14 0 24 10t10 24v71q0 15-9.5 24.5T806-360H674Zm-520 0q-15 0-24.5-9.5T120-394v-172q0-15 9.5-24.5T154-600h132q15 0 24.5 9.5T320-566v46h-48v-32H168v144h104v-32h48v46q0 15-9.5 24.5T286-360H154Z" />
+                                    </svg>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CSS3</h5>
+                                        <div class="my-2">
+                                            <h7>80%</h7>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" class="ml-1 my-1">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                style="width: 80%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 enlarge">
+                            <div class="row g-0">
+                                <div class="col-md-3 d-flex justify-content-center text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                        style="fill: #ADB5BD; width: 50%;">
+                                        <path
+                                            d="M274-360q-15 0-24.5-9.5T240-394v-66h48v52h84v-192h48v206q0 15-9.5 24.5T386-360H274Zm240 0q-15 0-24.5-9.5T480-394v-46h48v32h104v-53H514q-14 0-24-10t-10-24v-71q0-15 9.5-24.5T514-600h132q15 0 24.5 9.5T680-566v46h-48v-32H528v53h118q14 0 24 10t10 24v71q0 15-9.5 24.5T646-360H514Z" />
+                                    </svg>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CSS3</h5>
+                                        <div class="my-2">
+                                            <h7>60%</h7>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" class="ml-1 my-1">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                style="width: 60%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-3 enlarge">
+                            <div class="row g-0">
+                                <div class="col-md-3 d-flex justify-content-center text-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                        style="fill: #ADB5BD; width: 50%;">
+                                        <path
+                                            d="M120-360v-240h152q20 0 34 14t14 34v64q0 20-14 34t-34 14H168v80h-48Zm258 0v-240h48v89h108v-89h48v240h-48v-103H426v103h-48Zm282 0v-240h152q20 0 34 14t14 34v64q0 20-14 34t-34 14H708v80h-48ZM168-488h104v-64H168v64Zm540 0h104v-64H708v64Z" />
+                                    </svg>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">PHP</h5>
+                                        <div class="my-2">
+                                            <h7>30%</h7>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" class="ml-1 my-1">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                style="width: 30%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 enlarge">
+                            <div class="row g-0">
+                                <div class="col-md-3 d-flex justify-content-center align-items-center my-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" id="python">
+                                        <path fill="#ADB5BD"
+                                            d="M20.08 23.41h7.54a5 5 0 0 0 4.84-4.05V10.2s-1.81-4-9.11-4-8.54 3.35-8.54 3.35v4.71h8.83V16H11.88a6.21 6.21 0 0 0-6.25 6.22v5.16a5.45 5.45 0 0 0 5.45 5.46H14v-3.36a6.06 6.06 0 0 1 6.08-6.07ZM18.72 12a1.51 1.51 0 1 1 1.51-1.51A1.52 1.52 0 0 1 18.72 12Z">
+                                        </path>
+                                        <path fill="#ADB5BD"
+                                            d="M36.92 15.17H34v3.35a6.06 6.06 0 0 1-6.06 6.07h-7.56a5 5 0 0 0-4.84 4.05v9.16s1.81 4 9.11 4 8.54-3.35 8.54-3.35v-4.68h-8.83V32h11.76a6.21 6.21 0 0 0 6.25-6.22v-5.15a5.45 5.45 0 0 0-5.45-5.46ZM29.28 36a1.51 1.51 0 1 1-1.51 1.51A1.52 1.52 0 0 1 29.28 36Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Python</h5>
+                                        <div class="my-2">
+                                            <h7>90%</h7>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" class="ml-1 my-1">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 enlarge">
+                            <div class="row g-0">
+                                <div class="col-md-3 d-flex justify-content-center align-items-center my-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px"
+                                        viewBox="0 0 24 24" id="clapperboard-edit">
+                                        <path fill="#ADB5BD" fill-rule="evenodd"
+                                            d="M11.9426 1.25H12.0574C14.3658 1.24999 16.1748 1.24998 17.5863 1.43975C19.031 1.63399 20.1711 2.03933 21.0659 2.93414C21.859 3.72729 22.2687 4.71445 22.4865 5.93898C22.7006 7.14188 22.7398 8.63844 22.7479 10.4967C22.7497 10.9109 22.4154 11.2482 22.0012 11.25C21.587 11.2518 21.2498 10.9175 21.2479 10.5033C21.2451 9.86262 21.2384 9.2807 21.2232 8.75H13.5112C13.5033 8.75013 13.4953 8.75013 13.4874 8.75H7.01122C7.00327 8.75013 6.99532 8.75013 6.98737 8.75H2.77672C2.75045 9.67173 2.75 10.7422 2.75 12C2.75 14.3782 2.75159 16.0864 2.92637 17.3864C3.09825 18.6648 3.42514 19.4355 3.9948 20.0052C4.47928 20.4897 5.10692 20.7966 6.06179 20.9836C7.03759 21.1747 8.2972 21.2303 10.0064 21.2448C10.4206 21.2483 10.7535 21.5869 10.75 22.0011C10.7465 22.4153 10.4078 22.7483 9.99364 22.7448C8.28967 22.7303 6.90193 22.6767 5.77345 22.4556C4.62404 22.2305 3.69048 21.8222 2.93414 21.0659C2.03933 20.1711 1.63399 19.031 1.43975 17.5863C1.24998 16.1748 1.24999 14.3658 1.25 12.0574V11.9426C1.24999 9.63423 1.24998 7.82519 1.43975 6.41371C1.63399 4.96897 2.03933 3.82895 2.93414 2.93414C3.82895 2.03933 4.96897 1.63399 6.41371 1.43975C7.82519 1.24998 9.63423 1.24999 11.9426 1.25ZM2.85681 7.25H6.58829L9.44439 2.76185C8.31691 2.77915 7.39205 2.82171 6.61358 2.92637C5.33517 3.09825 4.56445 3.42514 3.9948 3.9948C3.42514 4.56445 3.09825 5.33517 2.92637 6.61358C2.89922 6.81554 2.87624 7.02735 2.85681 7.25ZM11.2072 2.75032C11.1886 2.80268 11.1638 2.85379 11.1327 2.90266L8.36626 7.25H13.0883L15.9189 2.80191C14.8557 2.7507 13.5747 2.75 12 2.75C11.727 2.75 11.4629 2.75002 11.2072 2.75032ZM17.5982 2.95698L14.8663 7.25H21.1432C21.11 6.86849 21.0665 6.52079 21.0097 6.20174C20.8255 5.16648 20.5122 4.50178 20.0052 3.9948C19.4677 3.45731 18.7512 3.13594 17.5982 2.95698ZM18.4488 12.988C19.4328 12.004 21.0281 12.004 22.012 12.988C22.996 13.9719 22.996 15.5672 22.012 16.5512L17.7302 20.833C17.4994 21.0639 17.3387 21.2246 17.1585 21.3652C16.9467 21.5304 16.7175 21.6721 16.4749 21.7877C16.2686 21.886 16.0531 21.9578 15.7434 22.061L13.8653 22.687C13.4243 22.834 12.9381 22.7192 12.6095 22.3905C12.2808 22.0619 12.166 21.5757 12.313 21.1347L12.939 19.2567C13.0422 18.947 13.114 18.7314 13.2123 18.5251C13.3279 18.2826 13.4696 18.0533 13.6348 17.8415C13.7753 17.6613 13.936 17.5006 14.1669 17.2698L18.4488 12.988ZM20.9514 14.0486C20.5532 13.6505 19.9076 13.6505 19.5095 14.0486L19.3777 14.1803C19.3829 14.1966 19.3885 14.2133 19.3944 14.2305C19.4762 14.4661 19.6315 14.7784 19.9266 15.0734C20.2216 15.3685 20.5339 15.5238 20.7695 15.6056C20.7867 15.6115 20.8034 15.6171 20.8197 15.6223L20.9514 15.4905C21.3495 15.0924 21.3495 14.4468 20.9514 14.0486ZM19.6857 16.7562C19.4193 16.6068 19.1372 16.4054 18.8659 16.1341C18.5946 15.8628 18.3932 15.5807 18.2438 15.3143L15.2578 18.3003C14.9856 18.5725 14.8944 18.6655 14.8176 18.764C14.7193 18.8899 14.6351 19.0262 14.5664 19.1704C14.5127 19.2831 14.4703 19.4063 14.3485 19.7715L14.0029 20.8084L14.1916 20.9971L15.2285 20.6515C15.5937 20.5297 15.7169 20.4873 15.8296 20.4336C15.9738 20.3649 16.1101 20.2807 16.236 20.1824C16.3345 20.1056 16.4275 20.0144 16.6997 19.7422L19.6857 16.7562Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Video Editing</h5>
+                                        <div class="my-2">
+                                            <h7>95%</h7>
+                                        </div>
+                                        <div class="progress" role="progressbar" aria-label="Basic example"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" class="ml-1 my-1">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                style="width: 95%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonials" class="aboutme reveal">
+                <h1 class="reveal my-4" style="font-family: 'Dela Gothic One', cursive; font-size: 75px;">
+                    Testimonials</h1>
+                <hr>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-4 mb-3 mb-sm-0">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-transparent border-0">
+                                            <img src="Images/testimonial-image-1.jpg" class="rounded-circle" width="80">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mark Smith</h5>
+                                            <p class="card-text">Web Developer</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                                ullamco
+                                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-transparent border-0">
+                                            <img src="Images/testimonial-image-2.jpg" class="rounded-circle" width="80">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mark Smith</h5>
+                                            <p class="card-text">Web Developer</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                                ullamco
+                                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-transparent border-0">
+                                            <img src="Images/testimonial-image-3.jpg" class="rounded-circle" width="80">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mark Smith</h5>
+                                            <p class="card-text">Web Developer</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                                ullamco
+                                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-4 mb-3 mb-sm-0">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-transparent border-0">
+                                            <img src="Images/testimonial-image-4.jpg" class="rounded-circle" width="80">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mark Smith</h5>
+                                            <p class="card-text">Web Developer</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                                ullamco
+                                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-transparent border-0">
+                                            <img src="Images/testimonial-image-1.jpg" class="rounded-circle" width="80">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mark Smith</h5>
+                                            <p class="card-text">Web Developer</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                                ullamco
+                                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card text-center">
+                                        <div class="card-header bg-transparent border-0">
+                                            <img src="Images/testimonial-image-2.jpg" class="rounded-circle" width="80">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mark Smith</h5>
+                                            <p class="card-text">Web Developer</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt
+                                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation
+                                                ullamco
+                                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev justify-content-start" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next justify-content-end" type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <section id="contactme" class="contactme reveal">
+                <h1 class="reveal my-4" style="font-family: 'Dela Gothic One', cursive; font-size: 75px;">
+                    Contact Me</h1>
+                <hr>
+                <div class="mb-3">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label for="name" class="form-label">Name</label>
+                                <input id="name" type="text" class="form-control" placeholder="Enter Your Name"
+                                    required>
+                            </div>
+                            <div class="col">
+                                <label for="email" class="form-label">Email address</label>
+                                <input id="email" type="email" class="form-control" placeholder="Enter Your Email ID"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                required></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-light">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="bg-dark text-center text-white">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            Copyright © 2023 Megh Patel. All rights reserved.
+        </div>
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+            <sub>Made during the Internship of <a
+                    onclick="window.open('https://bharatintern.live/b/i/index.html','_blank')"
+                    style="text-decoration: none; color: #fff; cursor: default;"><b>Bharat Intern</b></a></sub>
+        </div>
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+            <sub>Made with &#10084; by <a
+                    onclick="window.open('https://megh2711.github.io/meghthebaadal.com/','_blank')"
+                    style="text-decoration: none; color: #fff;"><b>Megh
+                        Patel</b></a></sub>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        ScrollReveal().reveal('.reveal', { delay: 500 },);
+        ScrollReveal().reveal('.revealdelay', { delay: 500 });
+    </script>
+</body>
+
+</html>
