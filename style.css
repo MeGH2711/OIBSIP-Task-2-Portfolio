@@ -1,0 +1,207 @@
+@font-face {
+    font-family: Pa;
+    src: url(./Pavelt.ttf);
+}
+
+@font-face {
+    font-family: Er;
+    src: url(./Escopedia\ Black.otf);
+}
+
+body {
+    background-color: #2B3035;
+}
+
+.scroller {
+    opacity: 0.05;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.scroller .scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scrollin;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.scroller .scroller-out {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scrollout;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.scroller h4 {
+    display: inline-block;
+    margin: 20px 15px;
+    font-size: 130px;
+    font-weight: 700;
+    -webkit-text-stroke: 1.5px var(--theme);
+}
+
+.hollow-text {
+    transition: all 0.3s ease;
+    /* Set the initial text color */
+    cursor: context-menu;
+}
+
+/* Style on hover to make the text hollow */
+.hollow-text:hover {
+    color: transparent;
+    /* Make the text transparent */
+    -webkit-text-stroke: 2px #ADB5BD;
+    /* Add an outline/stroke to the text (webkit prefix for some browsers) */
+}
+
+@keyframes scrollin {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollout {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+.landingbg {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.landingcnt {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlarge {
+    transition: transform 0.3s ease;
+}
+
+.enlarge:hover {
+    transform: scale(1.025);
+}
+
+/* Scrollbar Width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(37, 35, 35);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(46, 42, 42);
+}
+
+
+/* contactme h1 size */
+#contactme h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 75px;
+    width: fit-content;
+}
+
+/* testimonials h1 size */
+#testimonials h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 75px;
+    width: fit-content;
+}
+
+/* skills h1 size */
+#skills h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 75px;
+    width: fit-content;
+}
+
+/* aboutme h1 size */
+#aboutme h1 {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 75px;
+}
+
+nav a {
+    margin-left: 20px;
+}
+
+
+
+@media (max-width: 480px) {
+
+
+    /* contactme h1 size */
+    #contactme h1 {
+        font-size: 40px;
+    }
+
+    /* testimonials h1 size */
+    #testimonials h1 {
+        font-size: 40px;
+    }
+
+    /* skills h1 size */
+    #skills h1 {
+        font-size: 50px;
+    }
+
+    /* aboutme h1 size */
+    #aboutme h1 {
+        font-size: 50px;
+    }
+
+    /* Python Padding*/
+    #Python {
+        padding: 40px;
+    }
+
+    /* VideoEditing Padding*/
+    #VideoEditing {
+        padding: 40px;
+    }
+
+
+    #secondTestimonial {
+        margin-bottom: 15px;
+    }
+
+
+
+}
